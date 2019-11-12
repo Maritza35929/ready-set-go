@@ -1,0 +1,12 @@
+.boardContainer {
+
+}
+.boardContainer .img-logo {
+  width: 540px;
+  height: 500px;
+  background-image: url(../images/logo.png);
+  margin: 30px auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}

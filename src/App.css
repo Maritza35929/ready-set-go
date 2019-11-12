@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  with: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-image: url(images/pngguru.com.png);
+  background-size: contain;
 }
 
 .App-logo {
@@ -7,7 +12,6 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -19,4 +23,24 @@
 
 .App-link {
   color: #09d3ac;
+}
+.App input[type="button"] {
+  background-color: #DA963F;
+  color: white;
+  cursor: pointer;
+  font-size: 32px;
+  border-radius: 10px;
+  border: none;
+  padding: 10px 15px;
+}
+.App input[type="button"]:hover {
+  background-color: #BE3448;
+}
+.congrats {
+  background-color: white;
+  padding: 100px 0;
+}
+.congrats h1 {
+  color: #4E8B3B;
+  font-size: 36px;
 }

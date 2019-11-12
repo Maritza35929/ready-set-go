@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 import './css/Question.css';
+import './css/Board.css';
+import './css/ShowLevel.css';
 import Question from './components/Question.js';
 import ShowLevel from './components/ShowLevel.js';
 import EndGame from './components/EndGame.js';

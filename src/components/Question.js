@@ -6,6 +6,7 @@ class Question extends React.Component {
     this.state = {
       selectedAnswer: null
     }
+    this.continueButton = this.continueButton.bind(this);
   }
   selectAnswer(value) {
     this.setState({
@@ -13,7 +14,7 @@ class Question extends React.Component {
     });
   }
   continueButton() {
-    console.log(this.state.selectAnswer);
+    console.log(this.state.selectedAnswer);
     console.log(this.props.item.correct);
     if (this.state.selectedAnswer == this.props.item.correct) {
       this.setState({
@@ -31,7 +32,7 @@ class Question extends React.Component {
       <div className="questionContainer">
         {this.props.allQuestions?
           <form id="questionForm">
-            {this.props.item.question}
+            <h1>{this.props.item.question}</h1>
             <ul>
               {this.props.item.content.map((item,index)=>(
                 <li key={index}>
@@ -40,7 +41,7 @@ class Question extends React.Component {
                 </li>
               ))}
             </ul>
-            <input type="button" onClick={this.continueButton.bind(this)} value="Continue" disabled={this.state.selectedAnswer != null?false:true}/>
+            <input type="button" onClick={this.continueButton} value="Continue" disabled={this.state.selectedAnswer != null?false:true}/>
           </form>
           :null
         }

@@ -7,6 +7,7 @@ class Board extends React.Component {
   render() {
     return (
       <div className="boardContainer">
+        <div className="img-logo" />
         <input type="button" onClick={this.props.initQuestions.bind(this)} value="Play!" />
       </div>
     );
